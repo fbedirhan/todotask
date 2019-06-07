@@ -17,12 +17,12 @@ public class UserService implements UserServiceInterface {
 
     @Override
     public UserModel findUserById(int id) {
-        return null;
+        return mUserRepository.findById(id);
     }
 
     @Override
     public List<UserModel> findAllUsers() {
-        return null;
+        return mUserRepository.findAll();
     }
 
     @Override

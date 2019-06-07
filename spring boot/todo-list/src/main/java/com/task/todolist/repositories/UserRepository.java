@@ -11,4 +11,6 @@ public interface UserRepository extends JpaRepository<UserModel, Integer> {
 
     @Query("SELECT COUNT(u.id) FROM UserModel u WHERE u.email = ?1")
     int isUserExist(String email);
+
+    UserModel findById(int id);
 }
